@@ -10,6 +10,9 @@ const THEMES = [
   { id: 'blue', label: 'Blue' },
   { id: 'red', label: 'Red' },
   { id: 'purple', label: 'Purple' },
+  { id: 'teal', label: 'Teal' },
+  { id: 'orange', label: 'Orange' },
+  { id: 'emerald', label: 'Emerald' },
 ];
 
 export default function App() {

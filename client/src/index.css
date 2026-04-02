@@ -32,8 +32,12 @@
   --sidebar-hover: rgba(255, 255, 255, 0.1);
   --sidebar-active-bg: rgba(255, 255, 255, 0.15);
   --sidebar-border: rgba(255, 255, 255, 0.12);
-  --segment-bg: linear-gradient(135deg, rgba(0, 97, 255, 0.04) 0%, rgba(96, 239, 255, 0.06) 100%);
-  --segment-border: rgba(0, 97, 255, 0.12);
+  --segment-bg: #1e3a5f;
+  --segment-border: #2a4d7a;
+  --segment-text: #ffffff;
+  --segment-secondary: rgba(255, 255, 255, 0.6);
+  --segment-input-bg: rgba(255, 255, 255, 0.1);
+  --segment-input-border: rgba(255, 255, 255, 0.2);
   --badge-thread-bg: #dbeafe;
   --badge-thread-text: #1e40af;
   --badge-img-bg: #fef3c7;
@@ -65,8 +69,12 @@
   --sidebar-hover: rgba(255, 255, 255, 0.1);
   --sidebar-active-bg: rgba(255, 255, 255, 0.15);
   --sidebar-border: rgba(255, 255, 255, 0.12);
-  --segment-bg: linear-gradient(135deg, rgba(255, 65, 108, 0.05) 0%, rgba(255, 75, 43, 0.07) 100%);
-  --segment-border: rgba(255, 65, 108, 0.15);
+  --segment-bg: #5c1a2a;
+  --segment-border: #7a2240;
+  --segment-text: #ffffff;
+  --segment-secondary: rgba(255, 255, 255, 0.6);
+  --segment-input-bg: rgba(255, 255, 255, 0.1);
+  --segment-input-border: rgba(255, 255, 255, 0.2);
   --badge-thread-bg: #fce7f3;
   --badge-thread-text: #9d174d;
   --badge-img-bg: #fef3c7;
@@ -98,10 +106,125 @@
   --sidebar-hover: rgba(255, 255, 255, 0.1);
   --sidebar-active-bg: rgba(255, 255, 255, 0.15);
   --sidebar-border: rgba(255, 255, 255, 0.12);
-  --segment-bg: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(167, 139, 250, 0.07) 100%);
-  --segment-border: rgba(124, 58, 237, 0.14);
+  --segment-bg: #3b1a6e;
+  --segment-border: #4e2590;
+  --segment-text: #ffffff;
+  --segment-secondary: rgba(255, 255, 255, 0.6);
+  --segment-input-bg: rgba(255, 255, 255, 0.1);
+  --segment-input-border: rgba(255, 255, 255, 0.2);
   --badge-thread-bg: #ede9fe;
   --badge-thread-text: #5b21b6;
+  --badge-img-bg: #fef3c7;
+  --badge-img-text: #92400e;
+}
+
+/* ── Teal Gradient ── */
+[data-theme="teal"] {
+  --gradient-start: #0d9488;
+  --gradient-end: #5eead4;
+  --bg: #f0fdfa;
+  --bg-card: #ffffff;
+  --text: #132e2a;
+  --text-secondary: #4a7a74;
+  --primary: #0d9488;
+  --primary-hover: #0f766e;
+  --primary-light: rgba(13, 148, 136, 0.08);
+  --primary-focus: rgba(13, 148, 136, 0.18);
+  --danger: #dc3545;
+  --danger-hover: #bb2d3b;
+  --success: #198754;
+  --warning: #f59e0b;
+  --border: #ccece7;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --sidebar-bg: linear-gradient(180deg, #0d9488 0%, #065f56 100%);
+  --sidebar-text: rgba(255, 255, 255, 0.85);
+  --sidebar-text-active: #ffffff;
+  --sidebar-hover: rgba(255, 255, 255, 0.1);
+  --sidebar-active-bg: rgba(255, 255, 255, 0.15);
+  --sidebar-border: rgba(255, 255, 255, 0.12);
+  --segment-bg: #134e4a;
+  --segment-border: #1a6560;
+  --segment-text: #ffffff;
+  --segment-secondary: rgba(255, 255, 255, 0.6);
+  --segment-input-bg: rgba(255, 255, 255, 0.1);
+  --segment-input-border: rgba(255, 255, 255, 0.2);
+  --badge-thread-bg: #ccfbf1;
+  --badge-thread-text: #065f46;
+  --badge-img-bg: #fef3c7;
+  --badge-img-text: #92400e;
+}
+
+/* ── Orange Gradient ── */
+[data-theme="orange"] {
+  --gradient-start: #f97316;
+  --gradient-end: #fbbf24;
+  --bg: #fff7ed;
+  --bg-card: #ffffff;
+  --text: #351a05;
+  --text-secondary: #8a6542;
+  --primary: #ea580c;
+  --primary-hover: #c2410c;
+  --primary-light: rgba(234, 88, 12, 0.08);
+  --primary-focus: rgba(234, 88, 12, 0.18);
+  --danger: #dc3545;
+  --danger-hover: #bb2d3b;
+  --success: #198754;
+  --warning: #f59e0b;
+  --border: #f0d9c0;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --sidebar-bg: linear-gradient(180deg, #f97316 0%, #b45309 100%);
+  --sidebar-text: rgba(255, 255, 255, 0.85);
+  --sidebar-text-active: #ffffff;
+  --sidebar-hover: rgba(255, 255, 255, 0.1);
+  --sidebar-active-bg: rgba(255, 255, 255, 0.15);
+  --sidebar-border: rgba(255, 255, 255, 0.12);
+  --segment-bg: #6b2f0a;
+  --segment-border: #8a3d10;
+  --segment-text: #ffffff;
+  --segment-secondary: rgba(255, 255, 255, 0.6);
+  --segment-input-bg: rgba(255, 255, 255, 0.1);
+  --segment-input-border: rgba(255, 255, 255, 0.2);
+  --badge-thread-bg: #ffedd5;
+  --badge-thread-text: #9a3412;
+  --badge-img-bg: #fef3c7;
+  --badge-img-text: #92400e;
+}
+
+/* ── Emerald Gradient ── */
+[data-theme="emerald"] {
+  --gradient-start: #059669;
+  --gradient-end: #34d399;
+  --bg: #ecfdf5;
+  --bg-card: #ffffff;
+  --text: #12332a;
+  --text-secondary: #4d7c6f;
+  --primary: #059669;
+  --primary-hover: #047857;
+  --primary-light: rgba(5, 150, 105, 0.08);
+  --primary-focus: rgba(5, 150, 105, 0.18);
+  --danger: #dc3545;
+  --danger-hover: #bb2d3b;
+  --success: #198754;
+  --warning: #f59e0b;
+  --border: #c6eadc;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --sidebar-bg: linear-gradient(180deg, #059669 0%, #064e3b 100%);
+  --sidebar-text: rgba(255, 255, 255, 0.85);
+  --sidebar-text-active: #ffffff;
+  --sidebar-hover: rgba(255, 255, 255, 0.1);
+  --sidebar-active-bg: rgba(255, 255, 255, 0.15);
+  --sidebar-border: rgba(255, 255, 255, 0.12);
+  --segment-bg: #064e3b;
+  --segment-border: #08664f;
+  --segment-text: #ffffff;
+  --segment-secondary: rgba(255, 255, 255, 0.6);
+  --segment-input-bg: rgba(255, 255, 255, 0.1);
+  --segment-input-border: rgba(255, 255, 255, 0.2);
+  --badge-thread-bg: #d1fae5;
+  --badge-thread-text: #065f46;
   --badge-img-bg: #fef3c7;
   --badge-img-text: #92400e;
 }
@@ -251,7 +374,8 @@ select:focus {
 
 .theme-dots {
   display: flex;
-  gap: 8px;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 .theme-dot {
@@ -283,6 +407,18 @@ select:focus {
 
 .theme-dot-purple {
   background: linear-gradient(135deg, #7c3aed, #a78bfa);
+}
+
+.theme-dot-teal {
+  background: linear-gradient(135deg, #0d9488, #5eead4);
+}
+
+.theme-dot-orange {
+  background: linear-gradient(135deg, #f97316, #fbbf24);
+}
+
+.theme-dot-emerald {
+  background: linear-gradient(135deg, #059669, #34d399);
 }
 
 .main-content {
@@ -401,6 +537,8 @@ select:focus {
   padding: 16px;
   background: var(--segment-bg);
   border-color: var(--segment-border);
+  color: var(--segment-text);
+  border-radius: var(--radius);
 }
 
 .thread-segment .segment-header {
@@ -410,18 +548,45 @@ select:focus {
   margin-bottom: 8px;
   font-weight: 600;
   font-size: 0.9rem;
-  color: var(--text-secondary);
+  color: var(--segment-secondary);
 }
 
 .thread-segment textarea {
   min-height: 100px;
   resize: vertical;
+  background: var(--segment-input-bg);
+  border-color: var(--segment-input-border);
+  color: var(--segment-text);
+}
+
+.thread-segment textarea::placeholder {
+  color: var(--segment-secondary);
+}
+
+.thread-segment textarea:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.thread-segment input[type="text"] {
+  background: var(--segment-input-bg);
+  border-color: var(--segment-input-border);
+  color: var(--segment-text);
+}
+
+.thread-segment input[type="text"]::placeholder {
+  color: var(--segment-secondary);
+}
+
+.thread-segment input[type="text"]:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
 }
 
 .char-count {
   text-align: right;
   font-size: 0.8rem;
-  color: var(--text-secondary);
+  color: var(--segment-secondary);
   margin-top: 4px;
 }
 
