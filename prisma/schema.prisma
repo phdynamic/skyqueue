@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Account {
+  id          Int      @id @default(autoincrement())
+  label       String
+  handle      String   @unique
+  did         String   @unique
+  appPassword String
+  createdAt   DateTime @default(now())
+  posts       Post[]
+}
+
+model Post {
+  id          Int       @id @default(autoincrement())
+  accountId   Int
+  account     Account   @relation(fields: [accountId], references: [id])
+  status      String    @default("scheduled")
+  scheduledAt DateTime?
+  sentAt      DateTime?
+  errorMsg    String?
+  threads     Thread[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Thread {
+  id       Int     @id @default(autoincrement())
+  postId   Int
+  post     Post    @relation(fields: [postId], references: [id], onDelete: Cascade)
+  position Int
+  text     String
+  images   Image[]
+}
+
+model Image {
+  id       Int    @id @default(autoincrement())
+  threadId Int
+  thread   Thread @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  path     String
+  altText  String @default("")
+  position Int
+}
+
+model Template {
+  id        Int      @id @default(autoincrement())
+  name      String
+  threads   String
+  createdAt DateTime @default(now())
+}
