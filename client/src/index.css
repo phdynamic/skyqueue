@@ -554,13 +554,13 @@ select:focus {
 .thread-segment textarea {
   min-height: 100px;
   resize: vertical;
-  background: var(--segment-input-bg);
+  background: #ffffff;
   border-color: var(--segment-input-border);
-  color: var(--segment-text);
+  color: #1a1a2e;
 }
 
 .thread-segment textarea::placeholder {
-  color: var(--segment-secondary);
+  color: #9ca3af;
 }
 
 .thread-segment textarea:focus {
@@ -569,13 +569,13 @@ select:focus {
 }
 
 .thread-segment input[type="text"] {
-  background: var(--segment-input-bg);
+  background: #ffffff;
   border-color: var(--segment-input-border);
-  color: var(--segment-text);
+  color: #1a1a2e;
 }
 
 .thread-segment input[type="text"]::placeholder {
-  color: var(--segment-secondary);
+  color: #9ca3af;
 }
 
 .thread-segment input[type="text"]:focus {
